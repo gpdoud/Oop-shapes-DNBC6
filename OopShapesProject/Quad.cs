@@ -11,6 +11,10 @@ namespace OopShapesProject {
         public int side3 { get; set; }
         public int side4 { get; set; }
 
+        public virtual int GetArea() {
+            throw new NotImplementedException("Cannot calc area of quad!");
+        }
+
         public int GetPerimeter() {
             return side1 + side2 + side3 + side4;
         }

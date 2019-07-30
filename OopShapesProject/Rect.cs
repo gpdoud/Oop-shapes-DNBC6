@@ -6,7 +6,7 @@ namespace OopShapesProject {
 
     public class Rect : Quad {
 
-        public int GetArea() {
+        public override int GetArea() {
             return this.side1 * this.side2;
         }
 

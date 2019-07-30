@@ -4,8 +4,14 @@ namespace OopShapesProject {
     class Program {
         static void Main(string[] args) {
 
+            var sqrcomp = new SquareComp(5);
+            int p = sqrcomp.GetPerimeter();
+            int a = sqrcomp.GetArea();
+            Console.WriteLine($"The SqrComp perimeter is {p} and area is {a}");
+
             var quad1 = new Quad(5, 7, 13, 6);
-            var perimeter = quad1.GetPerimeter();
+            int perimeter = quad1.GetPerimeter();
+            //var area1 = quad1.GetArea();
             Console.WriteLine($"The quad perimeter is {perimeter}");
 
             var rect1 = new Rect(5, 13);
